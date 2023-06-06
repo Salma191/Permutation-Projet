@@ -50,7 +50,7 @@ const Navigation = ({ user }) => {
       <Tab.Screen name={home} component={Accueil} />
       <Tab.Screen name={profile}>{() => <Profil user={user} />}</Tab.Screen>
       <Tab.Screen name={rechercher} component={Rechercher} />
-      <Tab.Screen name={combinaison} component={Combinaison} />
+      {/* <Tab.Screen name={combinaison} component={Combinaison} /> */}
       <Tab.Screen name={contact} component={Contact} />
       <Tab.Screen
         name="Logout"
