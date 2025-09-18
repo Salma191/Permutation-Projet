@@ -1,11 +1,63 @@
-# Sample Snack app
+# 📚 Application mobile de permutation des professeurs  
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
+Cette application mobile, développée avec **React Native** et **Expo**, permet aux professeurs de gérer et d’automatiser le processus de permutation entre établissements scolaires. Elle repose sur une **API backend** qui centralise les données et la logique métier.  
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo-cli](https://docs.expo.dev/get-started/installation/#expo-cli)).
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
+## 🚀 Fonctionnalités principales  
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.dev/c/expo-dev-tools/61) or [Discord](https://chat.expo.dev/).
+- 🔐 **Authentification et création de compte** avec les informations :  
+  - Grade  
+  - Établissement  
+  - Spécialité  
+  - Ville actuelle  
+  - Ville désirée  
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
+- 👤 **Gestion du profil** : modification et mise à jour des informations.  
+
+- 🔎 **Recherche de permutation** : trouver les professeurs ayant l’inverse entre ville actuelle et ville désirée.  
+
+- 📊 **Statistiques avancées** :  
+  - Nombre de professeurs par **spécialité** (Top 15).  
+  - Nombre de professeurs par **grade** (Top 15).  
+  - Les **villes les plus désirées** (Top 15).
+
+
+## 🛠️ Technologies utilisées  
+
+### Frontend (mobile)  
+- **React Native 0.70.8** – Développement mobile cross-platform  
+- **Expo 47.0.14** – Build et développement  
+- **React Navigation** – Navigation entre écrans (stack, tabs)  
+- **Axios** – Consommation de l’API backend  
+- **React Native Paper** – UI components (design Material)  
+- **React Native Chart Kit / SVG / Pie** – Graphiques et statistiques  
+- **React Native Animatable** – Animations  
+
+
+
+## ⚙️ Installation et exécution  
+
+1. **Cloner le projet**  
+   ```bash
+   git clone https://github.com/Salma191/permutation-professeurs.git
+   cd permutation-professeurs
+   
+2. **Installer les dépendances**  
+   ```bash
+   npm install
+
+3. **Configurer l’API backend**  
+- Modifier l’URL de l’API dans src/services/api.js (exemple : http://localhost:3000/api)
+
+
+4. **Lancer l’application**  
+   ```bash
+   npx expo start
+
+5. **Tester sur mobile via Expo Go**  
+
+
+## 🎥 Démo vidéo
+
+https://github.com/user-attachments/assets/21d5b583-4436-4026-8292-88fbba9c5e58
+
