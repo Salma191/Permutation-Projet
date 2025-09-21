@@ -81,7 +81,10 @@ The backend API URL is configured in `src/services/api.js`.  Update this file wi
 
 ## Demo Video
 
-https://github.com/user-attachments/assets/21d5b583-4436-4026-8292-88fbba9c5e58
+
+
+https://github.com/user-attachments/assets/7342ff25-a148-4a5d-b193-60afccd4dfe3
+
 
 
 ## Contributing
