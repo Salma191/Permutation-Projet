@@ -1,63 +1,96 @@
-# 📚 Application mobile de permutation des professeurs  
+# Permutation-Projet: Teacher Transfer Application
 
-Cette application mobile, développée avec **React Native** et **Expo**, permet aux professeurs de gérer et d’automatiser le processus de permutation entre établissements scolaires. Elle repose sur une **API backend** qui centralise les données et la logique métier.  
-
-
-## 🚀 Fonctionnalités principales  
-
-- 🔐 **Authentification et création de compte** avec les informations :  
-  - Grade  
-  - Établissement  
-  - Spécialité  
-  - Ville actuelle  
-  - Ville désirée  
-
-- 👤 **Gestion du profil** : modification et mise à jour des informations.  
-
-- 🔎 **Recherche de permutation** : trouver les professeurs ayant l’inverse entre ville actuelle et ville désirée.  
-
-- 📊 **Statistiques avancées** :  
-  - Nombre de professeurs par **spécialité** (Top 15).  
-  - Nombre de professeurs par **grade** (Top 15).  
-  - Les **villes les plus désirées** (Top 15).
+<p align="center">
+  <img src="https://img.shields.io/badge/Node.js-16+-green?logo=node.js" alt="Node.js" />
+  <img src="https://img.shields.io/badge/React%20Native-0.70.8-blue?logo=react" alt="React Native" />
+  <img src="https://img.shields.io/badge/Expo-47.0.14-lightgrey?logo=expo" alt="Expo" />
+</p>
 
 
-## 🛠️ Technologies utilisées  
+This project automates and simplifies the teacher transfer process between schools by providing an intuitive mobile application connected to a centralized backend API.  It is designed primarily for teachers who want to request or manage transfers, helping them easily find matching opportunities with other teachers.
 
-### Frontend (mobile)  
-- **React Native 0.70.8** – Développement mobile cross-platform  
-- **Expo 47.0.14** – Build et développement  
-- **React Navigation** – Navigation entre écrans (stack, tabs)  
-- **Axios** – Consommation de l’API backend  
-- **React Native Paper** – UI components (design Material)  
-- **React Native Chart Kit / SVG / Pie** – Graphiques et statistiques  
-- **React Native Animatable** – Animations  
+## Table of Contents
+
+- [Features](#features)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [API Configuration](#api-configuration)
+- [Technologies Used](#technologies-used)
+- [Demo Video](#demo-video)
+- [Contributing](#contributing)
+- [Roadmap](#roadmap)
 
 
+## Features
 
-## ⚙️ Installation et exécution  
+* **User Authentication & Account Creation:** Teachers can register and create accounts by entering details such as grade, institution, specialty, current city, and desired city.  
+* **Profile Management:** Teachers can edit and update their personal information at any time.  
+* **Transfer Search:** Teachers can search for and match with other teachers who have opposite transfer preferences (current city ↔ desired city).  
+* **Advanced Statistics:** Provides insights such as the top 15 specialties, grades, and most desired cities.  
 
-1. **Cloner le projet**  
+
+## Requirements
+
+* **Node.js:** Version 16 or higher.
+* **npm or yarn:**  A package manager for Node.js.
+* **Expo CLI:**  Install globally using `npm install -g expo-cli`.
+* **Backend API:** A configured backend API is required.  The API URL can be modified within `src/services/api.js`.
+
+
+## Installation
+
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/Salma191/permutation-professeurs.git
    cd permutation-professeurs
-   
-2. **Installer les dépendances**  
+   ```
+
+2. **Install dependencies:**
    ```bash
    npm install
+   ```
 
-3. **Configurer l’API backend**  
-- Modifier l’URL de l’API dans src/services/api.js (exemple : http://localhost:3000/api)
-
-
-4. **Lancer l’application**  
+3. **Start the application:**
    ```bash
    npx expo start
+   ```
 
-5. **Tester sur mobile via Expo Go**  
+4. **Scan the QR Code:** Scan the QR code displayed in your terminal with the Expo Go mobile app.
 
 
-## 🎥 Démo vidéo
+## Usage
+
+Refer to the in-app instructions for detailed usage.  The application provides intuitive navigation and clear guidance for both teachers and administrators.
+
+## API Configuration
+
+The backend API URL is configured in `src/services/api.js`.  Update this file with the correct URL for your deployed API.  Ensure your API is properly configured and accessible before running the application.
+
+## Technologies Used  
+
+### Frontend (mobile)  
+- **React Native 0.70.8** – Cross-platform mobile development  
+- **Expo 47.0.14** – Build and development  
+- **React Navigation** – Navigation between screens (stack, tabs)  
+- **Axios** – Backend API consumption  
+- **React Native Paper** – UI components (Material design)
+- **React Native Chart Kit / SVG / Pie** – Charts and statistics  
+- **React Native Animatable** – Animations  
+
+
+## Demo Video
 
 https://github.com/user-attachments/assets/21d5b583-4436-4026-8292-88fbba9c5e58
 
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request.  Ensure your code adheres to the project's coding style and includes comprehensive tests.
+
+## Roadmap
+
+* **Phase 1 (Complete):**  Develop core features: authentication, profile management, basic transfer search.
+* **Phase 2:** Implement advanced statistics export (PDF/Excel).
+* **Phase 3:** Integrate real-time notifications for new transfer matches.
+* **Phase 4:** Multi-language support (French/Arabic).
